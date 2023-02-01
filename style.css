@@ -1,0 +1,33 @@
+body {
+    background: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#maze-box {
+    height: 750px;
+    width: 1500px;
+    margin: auto;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+}
+
+#start-here {
+    position: absolute;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#finish-here {
+    position: absolute;
+    padding: 700px 0 0 1400px;
+}
+
+#running-person {
+    position: absolute;
+    align-items: left;
+    padding: 15px 0 0 165px;
+}
+
