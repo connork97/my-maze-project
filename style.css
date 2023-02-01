@@ -3,11 +3,17 @@ body {
     color: white;
     margin: auto;
     text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 #maze-box {
-    height: 750px;
-    width: 1500px;
+    height: 820px;
+    width: 1620px;
     margin: auto;
     border-style: solid;
     border-color: white;
@@ -18,16 +24,117 @@ body {
     position: absolute;
     text-align: left;
     padding-left: 25px;
+    font-size: 2em;
 }
 
 #finish-here {
     position: absolute;
-    padding: 700px 0 0 1400px;
+    padding: 720px 0 0 1475px;
 }
 
-#running-person {
+#person {
     position: absolute;
     align-items: left;
-    padding: 15px 0 0 165px;
+    padding: 15px 0 0 190px;
 }
 
+#rows {
+    position: absolute;
+    top: 215px;
+    max-width: 1620px;
+}
+
+#row1 {
+    width: 100px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 100px;
+}
+
+#row2 {
+    width: 200px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+}
+
+#row3 {
+    width: 300px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+}
+
+#row4 {
+    width: 400px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+}
+
+#row5 {
+    width: 500px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+}
+
+#row6 {
+    width: 600px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+}
+
+#row7 {
+    width: 700px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+}
+
+/*  Not sure how to fix my Columns.
+I figured out how to create rows spaced as I please, but the same principles don't seem to apply to columns.
+Revisiting this later!
+
+#columns {
+    position: absolute;
+    left: 300px;
+    max-height: 840px;
+    max-width: 1620px;
+}
+
+#column-1 {
+    height: 100px;
+    border-left: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 100px 0 0 200px;
+}
+
+#column-2 {
+    height: 200px;
+    border-left: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 100px 0 0 200px;
+}
+
+#column-3 {
+    height: 100px;
+    border-left: solid;
+    border-width: 5px;
+    border-color: white;
+    padding: 100px 0 0 200px;
+}
+
+/*#maze-path {
+    display:grid;
+} */
