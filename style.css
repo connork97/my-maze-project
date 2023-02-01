@@ -30,6 +30,7 @@ body {
 #finish-here {
     position: absolute;
     padding: 720px 0 0 1475px;
+    font-size: 2em;
 }
 
 #person {
@@ -45,23 +46,25 @@ body {
 }
 
 #row1 {
-    width: 100px;
-    border-top: solid;
-    border-width: 5px;
-    border-color: white;
-    padding-top: 100px;
-}
-
-#row2 {
-    width: 200px;
+    width: 1420px;
     border-top: solid;
     border-width: 5px;
     border-color: white;
     padding-top: 95px;
+
+}
+
+#row2 {
+    width: 1420px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+    margin-left: 180px;
 }
 
 #row3 {
-    width: 300px;
+    width: 1420px;
     border-top: solid;
     border-width: 5px;
     border-color: white;
@@ -69,15 +72,16 @@ body {
 }
 
 #row4 {
-    width: 400px;
+    width: 1420px;
     border-top: solid;
     border-width: 5px;
     border-color: white;
     padding-top: 95px;
+    margin-left: 180px;
 }
 
 #row5 {
-    width: 500px;
+    width: 1420px;
     border-top: solid;
     border-width: 5px;
     border-color: white;
@@ -85,15 +89,16 @@ body {
 }
 
 #row6 {
-    width: 600px;
+    width: 1420px;
     border-top: solid;
     border-width: 5px;
     border-color: white;
     padding-top: 95px;
+    margin-left: 180px;
 }
 
 #row7 {
-    width: 700px;
+    width: 1420px;
     border-top: solid;
     border-width: 5px;
     border-color: white;
@@ -104,12 +109,15 @@ body {
 I figured out how to create rows spaced as I please, but the same principles don't seem to apply to columns.
 Revisiting this later!
 
+
 #columns {
     position: absolute;
     left: 300px;
     max-height: 840px;
     max-width: 1620px;
 }
+
+
 
 #column-1 {
     height: 100px;
