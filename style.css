@@ -7,14 +7,26 @@ body {
     width: 100%;
 }
 
-* {
-    box-sizing: border-box;
+
+
+/*  Totally screws with my pixel determined padding for literally every other element.  
+Need to figure out a better way to relate elements to one another regarding positioning.
+
+h1.title {
+    font-size: 4em;
 }
 
+p.maze-rules {
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+*/
+
 #maze-box {
+    position: relative;
+    margin: auto;
     height: 820px;
     width: 1620px;
-    margin: auto;
     border-style: solid;
     border-color: white;
     border-width: 10px;
@@ -22,39 +34,56 @@ body {
 
 #start-here {
     position: absolute;
-    text-align: left;
-    padding-left: 25px;
+    left: 25px;
     font-size: 2em;
 }
 
 #finish-here {
     position: absolute;
-    padding: 720px 0 0 1475px;
+    left: 1475px;
     font-size: 2em;
 }
 
 #person {
     position: absolute;
-    align-items: left;
-    padding: 15px 0 0 190px;
+    margin-left: 12.5%;
+    margin-top: 1.5%;
 }
 
-#rows {
-    position: absolute;
-    top: 215px;
+.rows {
+    position: relative;
+    top: 100px;
     max-width: 1620px;
 }
 
-#row1 {
+.row1 {
     width: 1420px;
     border-top: solid;
+    border-right: solid;
     border-width: 5px;
     border-color: white;
     padding-top: 95px;
 
 }
 
-#row2 {
+.row2 {
+    width: 1245px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+    margin-left: 180px;
+}
+
+.row3 {
+    width: 1420px;
+    border-top: solid;
+    border-width: 5px;
+    border-color: white;
+    padding-top: 95px;
+}
+
+.row4 {
     width: 1420px;
     border-top: solid;
     border-width: 5px;
@@ -63,7 +92,7 @@ body {
     margin-left: 180px;
 }
 
-#row3 {
+.row5 {
     width: 1420px;
     border-top: solid;
     border-width: 5px;
@@ -71,24 +100,7 @@ body {
     padding-top: 95px;
 }
 
-#row4 {
-    width: 1420px;
-    border-top: solid;
-    border-width: 5px;
-    border-color: white;
-    padding-top: 95px;
-    margin-left: 180px;
-}
-
-#row5 {
-    width: 1420px;
-    border-top: solid;
-    border-width: 5px;
-    border-color: white;
-    padding-top: 95px;
-}
-
-#row6 {
+.row6 {
     width: 1420px;
     border-top: solid;
     border-width: 5px;
@@ -97,7 +109,7 @@ body {
     margin-left: 180px;
 }
 
-#row7 {
+.row7 {
     width: 1420px;
     border-top: solid;
     border-width: 5px;
@@ -110,7 +122,7 @@ I figured out how to create rows spaced as I please, but the same principles don
 Revisiting this later!
 
 
-#columns {
+.columns {
     position: absolute;
     left: 300px;
     max-height: 840px;
@@ -119,7 +131,7 @@ Revisiting this later!
 
 
 
-#column-1 {
+.column-1 {
     height: 100px;
     border-left: solid;
     border-width: 5px;
@@ -127,7 +139,7 @@ Revisiting this later!
     padding: 100px 0 0 200px;
 }
 
-#column-2 {
+.column-2 {
     height: 200px;
     border-left: solid;
     border-width: 5px;
@@ -135,7 +147,7 @@ Revisiting this later!
     padding: 100px 0 0 200px;
 }
 
-#column-3 {
+.column-3 {
     height: 100px;
     border-left: solid;
     border-width: 5px;

@@ -2,16 +2,16 @@ var person = null;
     function init() {
         person = document.getElementById("person");
         person.style.position = "absolute";
-        person.style.left = "165px";
-        person.style.top = "125px";
+        person.style.left = "0";
+        person.style.top = "0";
     }
 
 function movePersonRight() {
     const rightNumbers = person.style.left.replace("px", "");
     const left = parseInt(rightNumbers, 10);
 
-    if (left < 1525) {
-        person.style.left = `${left + 5}px`;
+    if (left < 1370) {
+        person.style.left = `${left + 10}px`;
     }
 }
 
@@ -19,8 +19,8 @@ function movePersonLeft() {
     const leftNumbers = person.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
 
-    if (left > 0) {
-        person.style.left = `${left - 5}px`;
+    if (left > -190) {
+        person.style.left = `${left - 10}px`;
     }
 }
 
@@ -28,8 +28,8 @@ function movePersonUp() {
     const topNumbers = person.style.top.replace("px", "");
     const top = parseInt(topNumbers, 10);
 
-    if (top > 125) {
-        person.style.top = `${top - 5}px`;
+    if (top > 0) {
+        person.style.top = `${top - 10}px`;
     }
 }
 
@@ -37,8 +37,8 @@ function movePersonDown() {
     const bottomNumbers = person.style.top.replace("px", "");
     const top = parseInt(bottomNumbers, 10);
 
-    if (top < 850) {
-        person.style.top = `${top + 5}px`;
+    if (top < 725) {
+        person.style.top = `${top + 10}px`;
     }
 }
 
